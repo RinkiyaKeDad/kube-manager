@@ -1,8 +1,10 @@
 # kube-manager
 
-kube-manager is a CLI to export and import Kubernetes contexts from and to a kubeconfig file. 
+kube-manager is a CLI to import and export Kubernetes contexts to and from a kubeconfig file. 
 
-It is meant to make it easier to share access to K8s clusters by allowing you to `export` one of your contexts to a separate kubeconfig file which you can send to anyone you want to share access with. They can then `import` the context into their original kubeconfig file and have access to the cluster you shared with them.
+Ever faced this problem when you downloaded the kubeconfig file for a cluster from a cloud provider (or someone on your team shared theirs with you to give you access) and you want that cluster added to your main kubeconfig file (`~/.kube/config`) where all your other contexts are? You had to manually copy the context from the new kubeconfig file to your existing one. This CLI solves that problem by allowing you to import and export contexts to and from a kubeconfig file.
+
+![kube-manager demo](demo.gif)
 
 ## Installation
 
