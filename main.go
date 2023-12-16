@@ -13,7 +13,7 @@ var kubeconfigPath string
 func main() {
 	rootCmd := &cobra.Command{
 		Use:   "kube-manager",
-		Short: "Manage kubeconfig",
+		Short: "Manage your kubeconfigs",
 	}
 
 	rootCmd.AddCommand(cmd.ExportCmd(), cmd.ImportCmd(), cmd.KubeconfigCmd())

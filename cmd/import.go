@@ -29,13 +29,13 @@ func importKubeconfig(args []string) {
 	importedPath := args[0]
 	importedConfig, err := clientcmd.LoadFromFile(importedPath)
 	if err != nil {
-		fmt.Println("Failed to load kubeconfig:", err)
+		fmt.Println("Failed to load the kubeconfig to be imported:", err)
 		os.Exit(1)
 	}
 
 	config, err := loadKubeconfig()
 	if err != nil {
-		fmt.Println("Failed to load kubeconfig:", err)
+		fmt.Println("Failed to load your main kubeconfig:", err)
 		os.Exit(1)
 	}
 
