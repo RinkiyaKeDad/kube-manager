@@ -8,6 +8,17 @@ Ever faced this problem when you downloaded the kubeconfig file for a cluster fr
 
 ## Installation
 
+### Homebrew
+Add the tap:
+```sh
+brew tap rinkiyakedad/rinkiyakedad
+```
+Get the package:
+```sh
+brew install kube-manager
+```
+
+### Source Code
 1. Build the binary by running `go build` from the root of this repository after cloning it.
 2. Move the binary to a directory in your `$PATH` (e.g. `/usr/local/bin`).
 
