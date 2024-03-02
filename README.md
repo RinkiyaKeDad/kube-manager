@@ -30,6 +30,30 @@ brew install kube-manager
 
 1. To import a context to your main kubeconfig, run `kube-manager import <path to the kubeconfig file you want to import from>`. This will all all the contexts in that file to your main kubeconfig.
 
+## Cutting a new release
+
+1. `git tag -a v0.x -m "Your tag message"`
+
+2. `git push origin v0.x`
+
+In case the action fails and you want to re-run it:
+
+1. Delete the Tag Locally:
+```sh
+git tag -d v0.x
+```
+2. Delete the Tag Remotely:
+```sh
+git push --delete origin v0.x
+```
+3. Create the tag again:
+```sh
+git tag -a v0.x -m "Your tag message"
+```
+4. Push the tag again:
+```sh
+git push origin v0.x
+```
 ## Contributing
 
 If you like the project, please consider giving it a star. If you have any feedback, please open an issue.
