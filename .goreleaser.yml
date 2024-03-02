@@ -8,8 +8,6 @@ builds:
       - arm64
     env:
       - CGO_ENABLED=0
-    flags:
-      - -mod=vendor
 
 release:
   prerelease: auto
@@ -21,7 +19,7 @@ brews:
   -
     name: kube-manager
     homepage: "https://github.com/RinkiyaKeDad/kube-manager"
-    tap:
+    repository:
       owner: RinkiyaKeDad
       name: homebrew-rinkiyakedad
     commit_author:
