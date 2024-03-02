@@ -33,3 +33,9 @@ brew install kube-manager
 ## Contributing
 
 If you like the project, please consider giving it a star. If you have any feedback, please open an issue.
+
+## References
+
+This which helped me create this project.
+
+- https://askcloudarchitech.com/posts/tutorials/create-homebrew-tap-golang-goreleaser-cobra-cli/
